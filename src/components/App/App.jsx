@@ -8,7 +8,7 @@ import ContactList from '../ContactList';
 import { Container, Phonebook, Contacts } from './App.styled';
 
 const App = () => {
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
   const isLoading = useSelector(getIsLoading);
   const isError = useSelector(getError);
 
