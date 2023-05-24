@@ -11,13 +11,10 @@ export const getError = state => state.contacts.error;
 export const getVisibleContacts = createSelector(
   [getContacts, getFilter],
   (contacts, filter) => {
-    const getFilteredContacts = contacts => {
-      const normalizedFilter = filter.toLowerCase();
+    const normalizedFilter = filter.toLowerCase();
 
-      return contacts.filter(contact =>
-        contact.name.toLowerCase().includes(normalizedFilter)
-      );
-    };
-    return getFilteredContacts(contacts);
+    return contacts.filter(contact =>
+      contact.name.toLowerCase().includes(normalizedFilter)
+    );
   }
 );
