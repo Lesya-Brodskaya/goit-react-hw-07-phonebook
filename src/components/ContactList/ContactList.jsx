@@ -12,15 +12,15 @@ import { List, Item, Text, Button } from './ContactList.styled';
 // };
 
 const ContactList = () => {
-  const contacts = useSelector(getVisibleContacts);
+  const visibleContacts = useSelector(getVisibleContacts);
   // const filter = useSelector(getFilter);
   const dispatch = useDispatch();
 
-  // const visibleContacts = getVisibleContacts(contacts, filter);
+  //const visibleContacts = getVisibleContacts(contacts, filter);
 
   return (
     <List>
-      {contacts.map(({ id, name, number }) => {
+      {visibleContacts.map(({ id, name, number }) => {
         return (
           <Item key={id}>
             <Text>
