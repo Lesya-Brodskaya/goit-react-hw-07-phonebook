@@ -9,13 +9,13 @@ const ContactList = () => {
 
   return (
     <List>
-      {visibleContacts.map(({ id, name, number }) => {
+      {visibleContacts.map(({ _id, name, phone }) => {
         return (
-          <Item key={id}>
+          <Item key={_id}>
             <Text>
-              {name}: {number}
+              {name}: {phone}
             </Text>
-            <Button type="submit" onClick={() => dispatch(deleteContact(id))}>
+            <Button type="submit" onClick={() => dispatch(deleteContact(_id))}>
               Delete
             </Button>
           </Item>

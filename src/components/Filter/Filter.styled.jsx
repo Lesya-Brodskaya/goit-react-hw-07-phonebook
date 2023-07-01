@@ -4,6 +4,7 @@ export const Label = styled.label`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.534);
 `;
