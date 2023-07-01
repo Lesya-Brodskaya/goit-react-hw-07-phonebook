@@ -9,7 +9,7 @@ export const Form = styled.form`
 `;
 
 export const Label = styled.label`
-  margin-top: 20px;
+  /* margin-top: 20px; */
   width: 330px;
   display: flex;
   flex-direction: column;
