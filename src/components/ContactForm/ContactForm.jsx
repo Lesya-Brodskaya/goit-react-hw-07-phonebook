@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import shortid from 'shortid';
 import { useSelector, useDispatch } from 'react-redux';
 import { addContact } from 'redux/operations';
 import { getContacts } from 'redux/selectors';
